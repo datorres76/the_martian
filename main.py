@@ -17,7 +17,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/", response_class=HTMLResponse)
 def root(request:Request):
-    return templates.TemplateResponse("home.html",
+    return templates.TemplateResponse("index.html",
                                       {"request":request,
                                        "title":"The Martian WebApp",
                                        "text":"This is a text no hardcoded"})
@@ -72,7 +72,7 @@ def show_all_actor(request:Request, number:Optional[str]=Query("5", max_length=3
     response = []
     for id, actor in list(actors.items())[:int(number)]:
         response.append((id, actor))
-    return templates.TemplateResponse("index.html",
+    return templates.TemplateResponse("home.html",
                                       {"request":request,
                                        "actors":response,
                                        "title":"All actors"})

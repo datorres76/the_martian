@@ -1,14 +1,9 @@
 {% include 'header.html' %}
-{% include 'navbar.html' %}
+<body>
+    {% include 'navbar.html' %}
 
-<div class="container-fluid">
+    <h2 class="welcome_text">Welcome to the WebApp</h2> 
 
-    {% for id, actor in actors %}
-        <div class="row justify-content-center" style="text-align: center;">
-            <div class="col col-sm-6" style="border: 1px solid black; margin: 1em; border-radius: 10px">
-                {% include 'actor.html' %}
-            </div>
-</div>
-    {% endfor %}
-</div>
 
+
+{% include 'footer.html' %}
