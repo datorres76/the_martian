@@ -15,12 +15,14 @@ app=FastAPI()
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
+
+#Home
 @app.get("/", response_class=HTMLResponse)
 def root(request:Request):
     return templates.TemplateResponse("index.html",
                                       {"request":request,
                                        "title":"The Martian WebApp",
-                                       "text":"This is a text no hardcoded"})
+                                       })
 
     
 
@@ -93,3 +95,11 @@ def show_actor(id:int=Path(...,gt=0,lt=100)):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="The actor does not participate in this movie")
     return actor
 
+#About us
+
+@app.get("/about", response_class=HTMLResponse)
+def about_us(request:Request):
+    return templates.TemplateResponse("aboutme.html",
+                                      {"request":request,
+                                       "title":"Profile",
+                                       })

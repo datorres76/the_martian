@@ -1,4 +1,18 @@
-.welcome_text{
+.h2_text{
+    margin-top: 30px;
     text-align: center;
 
+}
+
+.mars{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mars_image{
+    width: 200px;
+    height: 200px;
 }
