@@ -21,3 +21,14 @@ actors= {
         "instagram":"@chiwetelE"
      }    
 }
+
+characters ={
+    1: {
+        "name": "Mark",
+        "lastname": "Watney",
+        "profession": "Botanic",
+        "role": "Astronaut",
+        "days_out_of_earth":564
+    }
+
+}

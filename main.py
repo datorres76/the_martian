@@ -10,24 +10,13 @@ from pydantic import BaseModel, Field, AnyUrl, FilePath
 from typing import Optional, List, Dict
 
 from db import actors
-
+from db import characters
 app=FastAPI()
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
-#Home
-@app.get("/", response_class=HTMLResponse)
-def root(request:Request):
-    return templates.TemplateResponse("index.html",
-                                      {"request":request,
-                                       "title":"The Martian WebApp",
-                                       })
-
-    
-
-
-
+# Models
 class Actor(BaseModel):
     first_name:str
     last_name:str
@@ -39,6 +28,22 @@ class Actor(BaseModel):
  
     web:Optional[AnyUrl]
     instagram:str
+
+class Character(BaseModel):
+    name: str
+    lastname: str
+    profession: str 
+    role: str
+    days_out_of_earth: int
+
+
+#Home
+@app.get("/", response_class=HTMLResponse)
+def root(request:Request):
+    return templates.TemplateResponse("index.html",
+                                      {"request":request,
+                                       "title":"The Martian WebApp",
+                                       })
 
 #Upload an image
 
@@ -103,3 +108,22 @@ def about_us(request:Request):
                                       {"request":request,
                                        "title":"Profile",
                                        })
+
+
+#Show all characters
+@app.get(
+    path="/character",
+    status_code=status.HTTP_200_OK,
+    response_class=HTMLResponse,
+
+    description="Return all the characters from the movie",
+    tags=["Character"]
+)
+def show_all_character(request:Request, number:Optional[str]=Query("5", max_length=3)):
+    response = []
+    for id, character in list(characters.items())[:int(number)]:
+        response.append((id, character))
+    return templates.TemplateResponse("home.html",
+                                      {"request":request,
+                                       "characters":response,
+                                       "title":"All characters"})
