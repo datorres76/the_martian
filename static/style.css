@@ -1,19 +1,34 @@
+.welcome_text{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
 
 .h2_text{
     margin-top: 30px;
     text-align: center;
-
 }
 
 .mars{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .mars_image{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+}
+
+.dev_by{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+
+}
+.body-index{
+    background-image: url("/static/images/space-background-website\ \(1\).jpeg");
 }

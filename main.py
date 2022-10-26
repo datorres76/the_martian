@@ -1,5 +1,6 @@
 #Imports
 import os
+from urllib import request
 import webbrowser
 from fastapi import FastAPI,Query,Path, HTTPException, status,Body, Request, Response, File, UploadFile
 from fastapi.encoders import jsonable_encoder
@@ -25,7 +26,6 @@ class Actor(BaseModel):
     born_year:int
     awards:List[str]
     movies:List[str]
- 
     web:Optional[AnyUrl]
     instagram:str
 
@@ -83,10 +83,7 @@ def show_all_actor(request:Request, number:Optional[str]=Query("5", max_length=3
                                       {"request":request,
                                        "actors":response,
                                        "title":"All actors"})
-
-
 #Show an actor by id
-
 @app.get(
     path="/actor/{id}",
     response_model=Actor,
@@ -94,11 +91,15 @@ def show_all_actor(request:Request, number:Optional[str]=Query("5", max_length=3
     tags=["Actor"],
     description="Return an Actor by an indicated id"
 )
-def show_actor(id:int=Path(...,gt=0,lt=100)):
+def show_actor(request:Request,id:int=Path(...,gt=0,lt=100)):
     actor = actors.get(id)
     if not actor:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="The actor does not participate in this movie")
-    return actor
+    return templates.TemplateResponse("home.html",
+                                      {"request":request,
+                                      "actor":actor,
+                                        "title":"All actors"})
+    
 
 #About us
 
