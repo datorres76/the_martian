@@ -28,21 +28,11 @@
           </li>
   
         </ul>
-        <form class="d-flex input-group w-auto">
-          <input
-            type="search"
-            class="form-control"
-            placeholder="Type query"
-            aria-label="Search"
-          />
-          <button
-            class="btn btn-outline-primary"
-            type="button"
-            data-mdb-ripple-color="dark"
-          >
-            Search
-          </button>
+        <form class="d-flex" style="margin: 0.5em;" action="/search" method="POST">
+          <input class="form-control me-2" type="search" placeholder="Search an actor" aria-label="Search" name="id">
+          <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
+  
       </div>
     </div>
   </nav>

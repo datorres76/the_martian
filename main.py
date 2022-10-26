@@ -2,7 +2,7 @@
 import os
 from urllib import request
 import webbrowser
-from fastapi import FastAPI,Query,Path, HTTPException, status,Body, Request, Response, File, UploadFile
+from fastapi import FastAPI,Query,Path, HTTPException, status,Body, Request, Response, File, UploadFile, Form
 from fastapi.encoders import jsonable_encoder
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
@@ -26,6 +26,7 @@ class Actor(BaseModel):
     born_year:int
     awards:List[str]
     movies:List[str]
+    picture:str
     web:Optional[AnyUrl]
     instagram:str
 
@@ -84,6 +85,15 @@ def show_all_actor(request:Request, number:Optional[str]=Query("5", max_length=3
                                        "actors":response,
                                        "title":"All actors"})
 #Show an actor by id
+
+@app.post(
+    path="/search",
+    response_class=RedirectResponse
+)
+def search_actor(id: str = Form(...)):
+    return RedirectResponse("/actor/" + id, status_code=status.HTTP_302_FOUND)
+
+
 @app.get(
     path="/actor/{id}",
     response_model=Actor,
@@ -93,12 +103,18 @@ def show_all_actor(request:Request, number:Optional[str]=Query("5", max_length=3
 )
 def show_actor(request:Request,id:int=Path(...,gt=0,lt=100)):
     actor = actors.get(id)
+    response= templates.TemplateResponse("search.html",
+                                       {"request":request,
+                                         "actor":actor,
+                                         "id":id,
+                                         "title":"actor"})
     if not actor:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="The actor does not participate in this movie")
-    return templates.TemplateResponse("home.html",
-                                      {"request":request,
-                                      "actor":actor,
-                                        "title":"All actors"})
+        response.status_code = status.HTTP_404_NOT_FOUND
+    return response
+
+
+
+
     
 
 #About us

@@ -7,7 +7,7 @@ actors= {
         "born_year": 1970,
         "awards": ["Oscar","Hall of fame"],
         "movies":["The martian","Bourne"],
-    
+        "picture":"Matt_Damon.jpg",
         "instagram":"@mattdamon"
      },
     2: {
