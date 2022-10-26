@@ -18,6 +18,7 @@ actors= {
         "born_year": 1977,
         "awards": ["Oscar","Hall of fame"],
         "movies":["The martian","Bourne"],
+        "picture":"Chiwetel_Ejiofor.jpg",
         "instagram":"@chiwetelE"
      }    
 }
