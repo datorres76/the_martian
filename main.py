@@ -87,7 +87,7 @@ def show_all_actor(request:Request, number:Optional[str]=Query("5", max_length=3
 #Show an actor by id
 
 @app.post(
-    path="/search",
+    path="/search-actor",
     response_class=RedirectResponse
 )
 def search_actor(id: str = Form(...)):
@@ -107,15 +107,10 @@ def show_actor(request:Request,id:int=Path(...,gt=0,lt=100)):
                                        {"request":request,
                                          "actor":actor,
                                          "id":id,
-                                         "title":"actor"})
+                                         "title":"Actor"})
     if not actor:
         response.status_code = status.HTTP_404_NOT_FOUND
     return response
-
-
-
-
-    
 
 #About us
 
@@ -140,7 +135,35 @@ def show_all_character(request:Request, number:Optional[str]=Query("5", max_leng
     response = []
     for id, character in list(characters.items())[:int(number)]:
         response.append((id, character))
-    return templates.TemplateResponse("home.html",
+    return templates.TemplateResponse("home2.html",
                                       {"request":request,
                                        "characters":response,
                                        "title":"All characters"})
+
+#Show a character by id
+
+@app.post(
+    path="/search-character",
+    response_class=RedirectResponse
+)
+def search_character(id: str = Form(...)):
+    return RedirectResponse("/character/" + id, status_code=status.HTTP_302_FOUND)
+
+
+@app.get(
+    path="/character/{id}",
+    response_model=Actor,
+    status_code=status.HTTP_202_ACCEPTED,
+    tags=["Character"],
+    description="Return a character by an indicated id"
+)
+def show_character(request:Request,id:int=Path(...,gt=0,lt=100)):
+    character = characters.get(id)
+    response= templates.TemplateResponse("search2.html",
+                                       {"request":request,
+                                         "character":character,
+                                         "id":id,
+                                         "title":"Character"})
+    if not character:
+        response.status_code = status.HTTP_404_NOT_FOUND
+    return response

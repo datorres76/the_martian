@@ -32,3 +32,9 @@
 .body-index{
     background-image: url("/static/images/space-background-website\ \(1\).jpeg");
 }
+
+.actor_img{
+    margin-bottom: 10px;
+    width: 170px;
+    height: 246px;
+}
