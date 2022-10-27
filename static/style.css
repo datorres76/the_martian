@@ -38,3 +38,16 @@
     width: 170px;
     height: 246px;
 }
+
+.actor-charact{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.tittle-act-char{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
