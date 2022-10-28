@@ -42,7 +42,40 @@ actors= {
         "movies":["The martian","Bourne"],
         "picture":"kate_mara.jpg",
         "instagram":"@katemara"
-     }  
+     },
+    5: {
+        "first_name": "Sebastian ", 
+        "last_name": "Stan",
+        "born_day": 13,
+        "born_month" : 8,
+        "born_year": 1982,
+        "awards": ["MTV Movie & TV Awards Best Duo","Hollywood Film Awards Ensemble of the Year	"],
+        "movies":["The martian","Bourne"],
+        "picture":"Sebastian_Stan.jpg",
+        "instagram":"@imsebastianstan"
+     }, 
+    6: {
+        "first_name": "Michael ", 
+        "last_name": "Peña",
+        "born_day": 13,
+        "born_month" : 1,
+        "born_year": 1976,
+        "awards": ["MTV Movie & TV Awards Best Duo"],
+        "movies":["The martian","Bourne"],
+        "picture":"Michael_Peña.jpg",
+        "instagram":"@mvegapena"
+     },
+    7: {
+        "first_name": "Aksel  ", 
+        "last_name": "Hennie",
+        "born_day": 29,
+        "born_month" : 10,
+        "born_year": 1975,
+        "awards": ["MTV Movie & TV Awards Best Duo"],
+        "movies":["The martian","Bourne"],
+        "picture":"aksel_hennie.jpg",
+        "instagram":"@akselhennie"
+     } 
 }
 
 
@@ -52,7 +85,7 @@ characters ={
         "lastname": "Watney",
         "profession": "Botanic",
         "role": "Astronaut",
-        "days_out_of_earth":564
+        "days_out_of_earth":564,
     },
     2: {
         "name": "Venkat ",
@@ -72,6 +105,27 @@ characters ={
         "name": "Beth ",
         "lastname": "Johanssen",
         "profession": "Engineer",
+        "role": "Astronaut",
+        "days_out_of_earth":100
+    },
+    5: {
+        "name": "Chris",
+        "lastname": "Beck",
+        "profession": "Biologist",
+        "role": "Astronaut",
+        "days_out_of_earth":100
+    },
+    6: {
+        "name": "Rick",
+        "lastname": ";Martinez",
+        "profession": "Engineer and Pilot",
+        "role": "Astronaut",
+        "days_out_of_earth":100
+    },
+    7: {
+        "name": "Alex",
+        "lastname": "Vogel",
+        "profession": "Biochemical",
         "role": "Astronaut",
         "days_out_of_earth":100
     }

@@ -38,6 +38,7 @@ class Character(BaseModel):
     days_out_of_earth: int
 
 
+
 #Home
 @app.get("/", response_class=HTMLResponse)
 def root(request:Request):
@@ -76,7 +77,7 @@ async def upload_pic(
     description="Return all the actors",
     tags=["Actor"]
 )
-def show_all_actor(request:Request, number:Optional[str]=Query("5", max_length=3)):
+def show_all_actor(request:Request, number:Optional[str]=Query("20", max_length=3)):
     response = []
     for id, actor in list(actors.items())[:int(number)]:
         response.append((id, actor))
@@ -131,7 +132,7 @@ def about_us(request:Request):
     description="Return all the characters from the movie",
     tags=["Character"]
 )
-def show_all_character(request:Request, number:Optional[str]=Query("5", max_length=3)):
+def show_all_character(request:Request, number:Optional[str]=Query("20", max_length=3)):
     response = []
     for id, character in list(characters.items())[:int(number)]:
         response.append((id, character))
