@@ -1,4 +1,5 @@
 #Imports
+import base64
 import os
 from urllib import request
 import webbrowser
@@ -9,7 +10,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import RedirectResponse, HTMLResponse, StreamingResponse, FileResponse
 from pydantic import BaseModel, Field, AnyUrl, FilePath
 from typing import Optional, List, Dict
-import datetime
+import datetime, base64
 
 from db import actors
 from db import characters
@@ -59,19 +60,20 @@ def is_directory_ready():
     return os.getcwd()+"/img/"
 
 @app.post(
-    path="/upload",
+    path="/upload-image",
     status_code=status.HTTP_201_CREATED
 )
-async def upload_pic(
-        image:UploadFile=File(...)
-):
+async def upload_pic(image:UploadFile=File(...)):
     dir=is_directory_ready()
     with open(dir+image.filename, "wb") as myimage:
         content = await image.read()
         myimage.write(content)
         myimage.close()
 
-    return "Image succesfully uploaded"
+    return  RedirectResponse("/upload")
+
+
+
 
 #Show all actors
 @app.get(
@@ -105,11 +107,6 @@ def get_age(old):
     year = int(date.strftime("%Y"))
     date=year-old
     return date
-
-
-
-
-
 
 
 #Show an actor by id
@@ -196,3 +193,29 @@ def show_character(request:Request,id:int=Path(...,gt=0,lt=100)):
     if not character:
         response.status_code = status.HTTP_404_NOT_FOUND
     return response
+
+
+
+@app.get("/upload", response_class=HTMLResponse)
+def root(request:Request):
+    return templates.TemplateResponse("upload_image.html",
+                                      {"request":request,
+                                       "title":"Upload an image",
+                                       })
+
+
+@app.post("/upload/image")
+def upload(request: Request, file: UploadFile = File(...)):
+    try:
+        contents = file.file.read()
+        dir=is_directory_ready()
+        with open(dir +"uploaded_" + file.filename, "wb") as f:
+            f.write(contents)
+    except Exception:
+        return {"message": "There was an error uploading the file"}
+    finally:
+        file.file.close()
+        
+    base64_encoded_image = base64.b64encode(contents).decode("utf-8")
+
+    return templates.TemplateResponse("display.html", {"request": request,  "myImage": base64_encoded_image})

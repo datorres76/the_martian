@@ -1,0 +1,15 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+<h1>Upload an image</h1>
+
+    <form method="post" action="/upload/image/"  enctype="multipart/form-data">   
+        <label for="file">Choose image to upload</label>
+        <input type="file" id="files" name="file"><br> 
+        <input type="submit" value="Upload">
+     </form>
+
+     <h2>Uploaded Image<h1>
+      <img src="data:image/jpeg;base64,{{ myImage | safe }}">
+
+{% include 'footer.html' %}
