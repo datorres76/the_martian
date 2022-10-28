@@ -1,15 +1,11 @@
 {% include 'header.html' %}
 {% include 'navbar2.html' %}
-<style></style>
-<div class="container">
+
+<section class="container_card_ind">
     {% if actor %}
-    <div class="row justify-content-center" style="text-align: center;">
-        <div class="col col-sm-6" style="border: 1px solid black; margin: 1em; border-radius: 10px;padding: 0px;">
-            {% include 'actor.html' %}
-        </div>
-    </div>    
+        {% include 'actor.html' %}
     {% else %}
         <h2>Oops!</h2>
     {% endif %}
-</div>
+</section>
 {% include 'footer.html' %}
