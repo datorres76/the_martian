@@ -95,12 +95,16 @@
     height: 150px;
     background: #3d0669;
     }
+    .upper-container-char{
+    height: 150px;
+    background: #db5d09;
+    }
     .image-container{
     width: 80px;
     height: 80px;
     border-radius: 50%;
     padding: 5px;
-    transform: translate(100px,5px);
+    transform: translate(110px,5px);
     }
     .image-container img{
     width: 170px;

@@ -1,6 +1,14 @@
-<div>
-    <h2>{{character["name"]}} {{character["lastname"]}} </h2>
-    <p> Profession: {{character["profession"]}}</p>
-    <p>Id: {{id}}</p>
-    <a href="/actor/{{id}}">Go to the actor</a>
-</div>
+
+   <body class="body_card">
+    <div class="card-container">
+       <div class="upper-container-char">
+       </div>
+       <div class="lower-container">
+          <div>
+             <h3>{{character.name}} {{character.lastname}}</h3>
+             <p>ID: {{id}} </p>
+             <h4>{{character.profession}}</h4>
+          </div>
+       </div>
+    </div>
+ </body>

@@ -1,19 +1,11 @@
 {% include 'header.html' %}
 {% include 'navbar3.html' %}
 
-<div class="container-fluid">
-    {% for id, character in characters %}
-        <div class="row justify-content-center" style="text-align: center;">
-            <div class="col col-sm-6" style="border: 1px solid black; margin: 1em; border-radius: 10px">
-                {% include 'character.html' %}
-            </div>
-</div>
-    {% endfor %}
-</div>
+<h1 class="tittle-act-char">Characters from The movie</h1>
 
-
-
-
-
-
+    <section class="container_card">
+        {% for id, character in characters %}
+            {% include 'character.html' %}
+        {% endfor %}
+    </section>
 {% include 'footer.html' %}
