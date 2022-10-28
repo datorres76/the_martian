@@ -24,11 +24,11 @@ class Actor(BaseModel):
     born_day:int
     born_month:int
     born_year:int
-    awards:List[str]
+    awards:Optional [List[str]]
     movies:List[str]
     picture:str
     web:Optional[AnyUrl]
-    instagram:str
+    instagram:Optional[str]
 
 class Character(BaseModel):
     name: str

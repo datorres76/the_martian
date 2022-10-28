@@ -71,10 +71,31 @@ actors= {
         "born_day": 29,
         "born_month" : 10,
         "born_year": 1975,
-        "awards": ["MTV Movie & TV Awards Best Duo"],
+        "awards": ["MTV Movie TV Awards Best Duo"],
         "movies":["The martian","Bourne"],
         "picture":"aksel_hennie.jpg",
         "instagram":"@akselhennie"
+     }, 
+    8: {
+        "first_name": "Jeff", 
+        "last_name": "Daniels",
+        "born_day": 19,
+        "born_month" : 2,
+        "born_year": 1955,
+        "awards": ["Primetime Emmy Award"],
+        "movies":["The martian","Bourne"],
+        "picture":"Jeff_Daniels.jpg",
+        "instagram":"N/A"
+     },
+    9: {
+        "first_name": "Kristen", 
+        "last_name": "Wiig",
+        "born_day": 23,
+        "born_month" : 8,
+        "born_year": 1972,
+        "movies":["The martian","Bourne"],
+        "picture":"Kristen_Wiig.jpg",
+        "instagram":"N/A"
      } 
 }
 
@@ -128,5 +149,19 @@ characters ={
         "profession": "Biochemical",
         "role": "Astronaut",
         "days_out_of_earth":100
+    },
+    8: {
+        "name": "Teddy",
+        "lastname": "Sanders",
+        "profession": "Administrator",
+        "role": "NASA director",
+        "days_out_of_earth":0
+    },
+    9: {
+        "name": "Annie",
+        "lastname": "Montrose",
+        "profession": "Administrator",
+        "role": "NASA communications director",
+        "days_out_of_earth":0
     }
 }
