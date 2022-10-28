@@ -9,12 +9,17 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import RedirectResponse, HTMLResponse, StreamingResponse, FileResponse
 from pydantic import BaseModel, Field, AnyUrl, FilePath
 from typing import Optional, List, Dict
+import datetime
 
 from db import actors
 from db import characters
 app=FastAPI()
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
+#Actor age
+def __init__(self,born_year):
+         born_year=born_year;
 
 
 # Models
@@ -84,7 +89,29 @@ def show_all_actor(request:Request, number:Optional[str]=Query("20", max_length=
     return templates.TemplateResponse("home.html",
                                       {"request":request,
                                        "actors":response,
+                                        "edad":get_age,
                                        "title":"All actors"})
+
+
+
+def get_age(cls):
+        date = datetime.date.today()
+        year = int(date.strftime("%Y"))
+        return year
+
+        
+def get_age(old):
+    date = datetime.date.today()
+    year = int(date.strftime("%Y"))
+    date=year-old
+    return date
+
+
+
+
+
+
+
 #Show an actor by id
 
 @app.post(
@@ -107,6 +134,7 @@ def show_actor(request:Request,id:int=Path(...,gt=0,lt=100)):
     response= templates.TemplateResponse("search.html",
                                        {"request":request,
                                          "actor":actor,
+                                         "edad":get_age,
                                          "id":id,
                                          "title":"Actor"})
     if not actor:
