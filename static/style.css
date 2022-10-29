@@ -79,7 +79,7 @@
     }
     .card-container{
     width: 400px;
-    height: 430px;
+    height: 480px;
     background: #FFF;
     border-radius: 6px;
     position: relative;
@@ -118,11 +118,14 @@
     text-align: center;
     }
     .lower-container-char{
-    height: 280px;
+    height: 340px;
     background: rgb(180, 175, 175);
     padding: 20px;
     padding-top: 40px;
     text-align: center;
+    }
+    .lower-container-char a{
+        padding-bottom: 20px;
     }
     .lower-container h3, h4{
     box-sizing: border-box;
@@ -164,3 +167,48 @@
     #h3-char{
         color: #22248f;
     }
+    .lower-container .btn{
+    padding: 12px 20px;
+    background: #7F00FF;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s ease-in;
+    }
+    .lower-container .btn:hover{
+    background: transparent;
+    color: #7F00FF;
+    border: 2px solid #7F00FF;
+    }
+
+
+.awards-movies_cont{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.movies{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    box-shadow: 0px 1px 10px 1px #000;
+    border-radius: 6px;
+}
+.awards{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    box-shadow: 0px 1px 10px 1px #000;
+    border-radius: 6px;
+}
+.upper-act{
+    background-color: #3d0669;
+    color: #FFF;
+    margin-bottom: 10px;
+}

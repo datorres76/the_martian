@@ -1,11 +1,38 @@
 {% include 'header.html' %}
 {% include 'navbar2.html' %}
 
+<h1 class="tittle-act-char">Actor Profile</h1>
+
 <div class="container_card_ind">
     {% if actor %}
             {% include 'actor.html' %}
-    {% else %}
-        <h2>Oops!</h2>
+            <section class="awards-movies_cont" >
+                <div class="movies" >
+                    <div class="upper-act" >
+                        <i class="fa-solid fa-2x" style="display:flex ; justify-content:center; padding-bottom: 10px; padding-top: 10px;">Movies</i>
+                        <i class="fa-solid fa-video fa-2x" style="display:flex ; justify-content:center"></i>
+                    </div>  
+                        <ul>
+                          {%for i in actor.movies%}
+                             <li>{{i}}</li>
+                          {%endfor%}
+                        </ul>
+                </div>
+                <div class="awards" >
+                    <div class="upper-act" >
+                        <i class="fa-solid fa-2x" style="display:flex ; justify-content:center; padding-bottom: 10px; padding-top: 10px;">Awards</i>
+                        <i class="fa-solid fa-trophy fa-2x" style="display:flex ; justify-content:center"></i>
+                    </div>  
+                        <ul>
+                          {%for i in actor.awards%}
+                             <li>{{i}}</li>
+                          {%endfor%}
+                        </ul>
+                </div>
+            </section>
+            
+            {% else %}
+            <h2>Oops!</h2>
     {% endif %}
 </div>
 {% include 'footer.html' %}
