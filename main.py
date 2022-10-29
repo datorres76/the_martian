@@ -42,6 +42,7 @@ class Character(BaseModel):
     profession: str 
     role: str
     days_out_of_earth: int
+    photo:str
 
 
 

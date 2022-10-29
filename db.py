@@ -107,61 +107,70 @@ characters ={
         "profession": "Botanic",
         "role": "Astronaut",
         "days_out_of_earth":564,
+        "photo":"Mark_Watney.PNG"
     },
     2: {
         "name": "Venkat ",
         "lastname": "Kapoor",
         "profession": "Engineer",
         "role": "Ares III director",
-        "days_out_of_earth":0
+        "days_out_of_earth":0,
+        "photo":"Venkat_Kapoor.PNG"
     },
     3: {
         "name": "Melissa ",
         "lastname": "Lewis",
         "profession": "Geologist",
         "role": "Astronaut",
-        "days_out_of_earth":100
+        "days_out_of_earth":100,
+        "photo":"Melissa_Lewis.PNG"
     },
     4: {
         "name": "Beth ",
         "lastname": "Johanssen",
         "profession": "Engineer",
         "role": "Astronaut",
-        "days_out_of_earth":100
+        "days_out_of_earth":100,
+        "photo":"Beth_Johanssen.PNG"
     },
     5: {
         "name": "Chris",
         "lastname": "Beck",
         "profession": "Biologist",
         "role": "Astronaut",
-        "days_out_of_earth":100
+        "days_out_of_earth":100,
+        "photo":"Christopher_Beck.PNG"
     },
     6: {
         "name": "Rick",
         "lastname": ";Martinez",
         "profession": "Engineer and Pilot",
         "role": "Astronaut",
-        "days_out_of_earth":100
+        "days_out_of_earth":100,
+        "photo":"Rick_Martinez.PNG"
     },
     7: {
         "name": "Alex",
         "lastname": "Vogel",
         "profession": "Biochemical",
         "role": "Astronaut",
-        "days_out_of_earth":100
+        "days_out_of_earth":100,
+        "photo":"ALex_Vogel.PNG"
     },
     8: {
         "name": "Teddy",
         "lastname": "Sanders",
         "profession": "Administrator",
         "role": "NASA director",
-        "days_out_of_earth":0
+        "days_out_of_earth":0,
+        "photo":"Teddy_Sanders.PNG"
     },
     9: {
         "name": "Annie",
         "lastname": "Montrose",
         "profession": "Administrator",
-        "role": "NASA communications director",
-        "days_out_of_earth":0
+        "role": "NASA Media Relations",
+        "days_out_of_earth":0,
+        "photo":"Annie_Montrose.PNG"
     }
 }

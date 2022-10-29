@@ -2,12 +2,20 @@
    <body class="body_card">
     <div class="card-container">
        <div class="upper-container-char">
+         <div class="image-container">
+            <img src="/static/images/{{character.photo}}" alt="character image">
+         </div>
        </div>
-       <div class="lower-container">
+       <div class="lower-container-char">
           <div>
              <h3>{{character.name}} {{character.lastname}}</h3>
              <p>ID: {{id}} </p>
              <h4>{{character.profession}}</h4>
+             <h3 id="h3-char">{{character.role}}</h3>
+             <figure class="logo-container">
+               <img class="ares-nasa-logo" src="/static/images/ares-logo.png" alt="ares-logo">
+               <img class="ares-nasa-logo" src="/static/images/nasa_logo.png" alt="nasa-logo">
+             </figure>
           </div>
        </div>
     </div>

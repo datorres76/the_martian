@@ -50,8 +50,10 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 60px;
+    font-size: 60px;
 
 }
+
 
 /*    card   */
 .container_card{
@@ -67,9 +69,6 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-
-
 
     .body_card{
     margin: 0px;
@@ -118,35 +117,50 @@
     padding-top: 40px;
     text-align: center;
     }
+    .lower-container-char{
+    height: 280px;
+    background: rgb(180, 175, 175);
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+    }
     .lower-container h3, h4{
     box-sizing: border-box;
     line-height: .6;
     font-weight: lighter;
-    padding-top: 25px;
+    padding-top: 20px;
+    }
+    .lower-container-char h3, h4{
+    box-sizing: border-box;
+    line-height: .6;
+    font-weight: lighter;
+    padding-top: 20px;
     }
     .lower-container h4{
     color: #7F00FF;
     opacity: .6;
     font-weight: bold;
+ 
     }
+    .lower-container-char h4{
+    color: #7F00FF;
+    opacity: .6;
+    font-weight: bold;
+    padding: 0px;
+    }
+    
     .lower-container p{
     font-size: 16px;
-    color: gray;
-    margin-bottom: 30px;
+    color: rgb(78, 75, 75);
+    margin-bottom: 10px;
     }
-    .lower-container .btn{
-    padding: 12px 20px;
-    background: #7F00FF;
-    border: none;
-    color: white;
-    border-radius: 30px;
-    font-size: 12px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all .3s ease-in;
+    .logo-container{
+        justify-content: space-between;
     }
-    .lower-container .btn:hover{
-    background: transparent;
-    color: #7F00FF;
-    border: 2px solid #7F00FF;
+    .ares-nasa-logo{
+        width: 60px;
+        height: 60px;
+    }
+    #h3-char{
+        color: #22248f;
     }
