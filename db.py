@@ -5,8 +5,8 @@ actors= {
         "born_day": 8,
         "born_month" : 10,
         "born_year": 1970,
-        "awards": ["Oscar","Hall of fame"],
-        "movies":["The martian","Bourne"],
+        "awards": ["Oscar for Best Original Screenplay (1998)","Golden Globe for Best Screenplay (1998)", "Golden Globe for Best Actor - Comedy or Musical (2016)"],
+        "movies":["The Bourne Identity (2002)","The Bourne Supremacy (2004)","The Bourne Ultimatum (2007)","Contagion","Interestellar (2014)","The martian (2015)","Jason Bourne (2016)"],
         "picture":"Matt_Damon.jpg",
         "instagram":"@mattdamon"
      },
@@ -16,8 +16,8 @@ actors= {
         "born_day": 10,
         "born_month" : 7,
         "born_year": 1977,
-        "awards": ["Oscar","Hall of fame"],
-        "movies":["The martian","Bourne"],
+        "awards": ["BAFTA Award for Best Actor (2013)"],
+        "movies":["Four Brothers (2005)","American Gangster (2007)","2012 (2009)","12 Years a Slave (2013)","The martian (2015)","Dr Strange (2016)","The Boy Who Harnessed the Wind (2019)","Doctor Strange in the Multiverse of Madness (2022)"],
         "picture":"Chiwetel_Ejiofor.jpg",
         "instagram":"@chiwetelE"
      },
@@ -27,8 +27,8 @@ actors= {
         "born_day": 24,
         "born_month" : 3,
         "born_year": 1977,
-        "awards": ["Oscar","Hall of fame"],
-        "movies":["The martian","Bourne"],
+        "awards": ["Oscar for the best actress (2022)","Globe award for the best drama actress (2013)","Screen Actors Guild Award for the best actress (2022)","Critics Choice Movie Award for the best actress (2013, 2022)","Satellite Award for the Best Supporting Actress - Drama","Silver Shell for Best Actress (2021)"],
+        "movies":["The Debt (2011)","The Help (2011)","Madagascar 3: Europe's Most Wanted (2012)","Zero Dark Thirty (2012)","Mama (2013)","Interestellar (2014)","The martian (2015)","It: Chapter 2 (2019)","The Eyes of Tammy Faye (2022)"],
         "picture":"Jessica_Chastain.jpg",
         "instagram":"@jessicachastain"
      },
@@ -38,8 +38,8 @@ actors= {
         "born_day": 27,
         "born_month" : 2,
         "born_year": 1983,
-        "awards": ["Oscar","Hall of fame"],
-        "movies":["The martian","Bourne"],
+        "awards": ["CinemaCon Award (2015)","Crystal Award for the face of the future"],
+        "movies":["Joe the King (1999)","Urban Legends: Bloody Mary (2005)","Zoom and the superheroes (2006)","127 hours (2010)","Fantastic 4 (2015)","The martian (2015)","Pose (2018)"],
         "picture":"kate_mara.jpg",
         "instagram":"@katemara"
      },
@@ -49,8 +49,8 @@ actors= {
         "born_day": 13,
         "born_month" : 8,
         "born_year": 1982,
-        "awards": ["MTV Movie & TV Awards Best Duo","Hollywood Film Awards Ensemble of the Year	"],
-        "movies":["The martian","Bourne"],
+        "awards": ["MTV Movie & TV Awards Best Duo (2021)","Hollywood Film Awards Ensemble of the Year (2017)"],
+        "movies":["The Covenant (2006)","Black Swan (2010)","Captain America: The first Avenger (2011)","Captain America: The Winter Soldier (2014)","The martian (2015)","Capitán América: Civil War (2016)","Avengers: Infinity War (2018)","Avengers: Endgame (2019)"],
         "picture":"Sebastian_Stan.jpg",
         "instagram":"@imsebastianstan"
      }, 
@@ -60,8 +60,8 @@ actors= {
         "born_day": 13,
         "born_month" : 1,
         "born_year": 1976,
-        "awards": ["MTV Movie & TV Awards Best Duo"],
-        "movies":["The martian","Bourne"],
+        "awards": ["ALMA Award for Outstanding Actor in a Motion Picture (2006)","ACCA for the best cast assemble (2005)","ALMA Award for Favorite Television Actor (2007)"],
+        "movies":[" Buffalo Soldiers (2001)","Crash (2004","Million Dollar Baby (2004)","The Lincoln Lawyer (2011)","American Hustle (2013)","Ant-Man (2015)","The martian (2015)","Ant-Man and the Wasp (2018)","Dora and the Lost City of Gold (2019)"],
         "picture":"Michael_Peña.jpg",
         "instagram":"@mvegapena"
      },
@@ -71,8 +71,8 @@ actors= {
         "born_day": 29,
         "born_month" : 10,
         "born_year": 1975,
-        "awards": ["MTV Movie TV Awards Best Duo"],
-        "movies":["The martian","Bourne"],
+        "awards": ["Amanda Award for the Best actor (2003,2009,2014)","Brussels European Film Festival Best actor (2003)","Golden Nymph for Outstanding Actor in a Drama TV Series (2017)"],
+        "movies":["Buddy (2003)","Den som frykter ulven (2004)","Lønsj (2008)","Headhunters (2011)","Hercules (2014)","The martian (2015)","The Cloverfield Paradox (2018)"],
         "picture":"aksel_hennie.jpg",
         "instagram":"@akselhennie"
      }, 
@@ -82,10 +82,10 @@ actors= {
         "born_day": 19,
         "born_month" : 2,
         "born_year": 1955,
-        "awards": ["Primetime Emmy Award"],
-        "movies":["The martian","Bourne"],
+        "awards": ["Primetime Emmy Award for Best Actor - Drama Series","Primetime Emmy award for Best Supporting Actor - Miniseries or TV Movie (2018)"],
+        "movies":["Something Wild (1986)","Arachnophobia (1990)","Dumb and Dumber (1994)","101 Dalmatians (1996)","Blood Work (2002)","Good Night, and Good Luck (2005)","The Answer Man (2009)","Looper (2012)","Dumb and Dumber To (2014)","The martian (2015)","The Divergent Series: Allegiant (2016) "],
         "picture":"Jeff_Daniels.jpg",
-        "instagram":"N/A"
+
      },
     9: {
         "first_name": "Kristen", 
@@ -93,9 +93,8 @@ actors= {
         "born_day": 23,
         "born_month" : 8,
         "born_year": 1972,
-        "movies":["The martian","Bourne"],
-        "picture":"Kristen_Wiig.jpg",
-        "instagram":"N/A"
+        "movies":["Unaccompanied Minors (2006)","Walk Hard: The Dewey Cox Story (2007)","Ice Age: Dawn of the Dinosaurs (2009)","Paul (2011)","Despicable Me 2 (2013)","How to train your dragon 2 (2014)","The martian (2015)","Zoolander 2 (2016)","Downsizing (2017)"],
+        "picture":"Kristen_Wiig.jpg"
      } 
 }
 
