@@ -91,12 +91,14 @@
     display: inline-block;
     }
     .upper-container{
+    width: 400px;
     height: 150px;
-    background: #3d0669;
+    background-image:url("/static/images/1188016\ \(1\).jpg")
     }
     .upper-container-char{
+    width: 400px;
     height: 150px;
-    background: #db5d09;
+    background-image:url("/static/images/wp2461878\ \(1\).jpg");
     }
     .image-container{
     width: 80px;
@@ -212,13 +214,40 @@
     color: #FFF;
     margin-bottom: 10px;
 }
-.img-dev{
+
+/*          About me          */
+
+.photo-dev{
+    width: 200px;
+    height: 300px;
+}
+.dev-info{
     display: flex;
     justify-content: center;
-    border:solid black;
-    
+}
+
+.img-dev{
+    display: flex;
+    justify-content: center;    
 }
 .info-dev{
+    width: 400px;
+    border: solid gray;
+    border-radius: 20px;
     text-align: center;
-    height: 400px;
+    height: fit-content;
+    padding: 20px;
+}
+.dev-info-desc{
+    display: flex;
+    justify-content: center;
+}
+.description{
+    margin-top: 20px;
+    width: 500px;
+    border: solid gray;
+    border-radius: 20px;
+    text-align: center;
+    height: fit-content;
+    padding: 20px; 
 }

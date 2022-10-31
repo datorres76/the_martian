@@ -54,28 +54,6 @@ def root(request:Request):
                                        "title":"The Martian WebApp",
                                        })
 
-#Upload an image
-
-def is_directory_ready():
-    os.makedirs(os.getcwd()+"/img", exist_ok=True)
-    return os.getcwd()+"/img/"
-
-@app.post(
-    path="/upload-image",
-    status_code=status.HTTP_201_CREATED
-)
-async def upload_pic(image:UploadFile=File(...)):
-    dir=is_directory_ready()
-    with open(dir+image.filename, "wb") as myimage:
-        content = await image.read()
-        myimage.write(content)
-        myimage.close()
-
-    return  RedirectResponse("/upload")
-
-
-
-
 #Show all actors
 @app.get(
     path="/actor",
@@ -96,13 +74,7 @@ def show_all_actor(request:Request, number:Optional[str]=Query("20", max_length=
                                        "title":"All actors"})
 
 
-
-def get_age(cls):
-        date = datetime.date.today()
-        year = int(date.strftime("%Y"))
-        return year
-
-        
+#Get age        
 def get_age(old):
     date = datetime.date.today()
     year = int(date.strftime("%Y"))
@@ -195,7 +167,12 @@ def show_character(request:Request,id:int=Path(...,gt=0,lt=100)):
         response.status_code = status.HTTP_404_NOT_FOUND
     return response
 
+#upload an image
+#Upload an image
 
+def is_directory_ready():
+    os.makedirs(os.getcwd()+"/img", exist_ok=True)
+    return os.getcwd()+"/img/"
 
 @app.get("/upload", response_class=HTMLResponse)
 def root(request:Request):

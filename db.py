@@ -104,7 +104,7 @@ characters ={
         "name": "Mark",
         "lastname": "Watney",
         "profession": "Botanic",
-        "role": "Astronaut",
+        "role": "Botanist & Engineer",
         "days_out_of_earth":564,
         "photo":"Mark_Watney.PNG"
     },
@@ -128,7 +128,7 @@ characters ={
         "name": "Beth ",
         "lastname": "Johanssen",
         "profession": "Engineer",
-        "role": "Astronaut",
+        "role": "Commander",
         "days_out_of_earth":100,
         "photo":"Beth_Johanssen.PNG"
     },
@@ -136,7 +136,7 @@ characters ={
         "name": "Chris",
         "lastname": "Beck",
         "profession": "Biologist",
-        "role": "Astronaut",
+        "role": "EVA Specialist",
         "days_out_of_earth":100,
         "photo":"Christopher_Beck.PNG"
     },
@@ -144,7 +144,7 @@ characters ={
         "name": "Rick",
         "lastname": ";Martinez",
         "profession": "Engineer and Pilot",
-        "role": "Astronaut",
+        "role": "Pilot",
         "days_out_of_earth":100,
         "photo":"Rick_Martinez.PNG"
     },
@@ -152,9 +152,9 @@ characters ={
         "name": "Alex",
         "lastname": "Vogel",
         "profession": "Biochemical",
-        "role": "Astronaut",
+        "role": "Navigator & Chemist",
         "days_out_of_earth":100,
-        "photo":"ALex_Vogel.PNG"
+        "photo":"Alex_Vogel.PNG"
     },
     8: {
         "name": "Teddy",
