@@ -218,36 +218,55 @@
 /*          About me          */
 
 .photo-dev{
-    width: 200px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
 }
 .dev-info{
     display: flex;
     justify-content: center;
+    border: solid gray;
+    border-radius: 20px;
+    width: fit-content ;
 }
 
-.img-dev{
-    display: flex;
-    justify-content: center;    
-}
 .info-dev{
     width: 400px;
-    border: solid gray;
+    border-right: solid gray;
     border-radius: 20px;
     text-align: center;
     height: fit-content;
-    padding: 20px;
+
 }
-.dev-info-desc{
-    display: flex;
-    justify-content: center;
+.info-dev p{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
 }
 .description{
-    margin-top: 20px;
     width: 500px;
-    border: solid gray;
     border-radius: 20px;
     text-align: center;
     height: fit-content;
     padding: 20px; 
+}
+.dev-cont{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+hr{
+    width: 80%;
+}
+
+.upper-me{
+    background-image: url("/static/images/3311924db62ceef62a4a7ee87017280f\ \(1\).jpg");
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 400px;
+    height: 100px;
+}
+.lower-me{
+    margin-top: 60px;
 }
