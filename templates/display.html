@@ -3,14 +3,21 @@
 
 <h1 class="tittle-act-char">Upload an Image</h1>
 
+    <div class="cont-upl">
+        <form class="form-upl" method="post" action="/upload/image/"  enctype="multipart/form-data">   
+            <label for="file"><h3>Choose image to upload   </h3></label>
+            <br>
+            <input type="file" id="files" name="file"><br> 
+            <input type="submit" value="Upload">
+        </form>
+    </div>   
 
-    <form method="post" action="/upload/image/"  enctype="multipart/form-data">   
-        <label for="file">Choose image to upload</label>
-        <input type="file" id="files" name="file"><br> 
-        <input type="submit" value="Upload">
-     </form>
-
-     <h2>Uploaded Image<h1>
-      <img src="data:image/jpeg;base64,{{ myImage | safe }}">
+    <div class="upl">
+         <h2>Uploaded Image<h1>
+    </div> 
+    <figure class="img-upl">
+        <img src="data:image/jpeg;base64,{{ myImage | safe }}">
+    </figure>   
+                
 
 {% include 'footer.html' %}

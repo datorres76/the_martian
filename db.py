@@ -95,7 +95,28 @@ actors= {
         "born_year": 1972,
         "movies":["Unaccompanied Minors (2006)","Walk Hard: The Dewey Cox Story (2007)","Ice Age: Dawn of the Dinosaurs (2009)","Paul (2011)","Despicable Me 2 (2013)","How to train your dragon 2 (2014)","The martian (2015)","Zoolander 2 (2016)","Downsizing (2017)"],
         "picture":"Kristen_Wiig.jpg"
-     } 
+     },
+    10: {
+        "first_name": "Mackenzie", 
+        "last_name": "Davies",
+        "born_day": 1,
+        "born_month" : 4,
+        "born_year": 1987,
+        "awards":["CinemaCon Award (2019)","CCA Super Award (2022)","Monster Fest Jury Prize (2016)","Napa Valley Film Festival Special Jury Award (2017)"],
+        "movies":["Smashed (2012)","What If (2013)","That Awkward Moment (2014)","The martian (2015)","Always Shine (2016)","Blade Runner 2049 (2017)","Terminator: Dark Fate (2019)","Happiest Season (2020)"],
+        "picture":"Mackenzie_Davies.jpg"
+    },
+    11: {
+        "first_name": "Sean", 
+        "last_name": "Bean",
+        "born_day": 17,
+        "born_month" : 4,
+        "born_year": 1959,
+        "awards":["BAFTA TV Award (2018, 2022)","ACCA Award for Best Cast Ensemble (2001, 2003)","Capri Global Award (2006)","CinEuphoria Award (2020)"],
+        "movies":["Stormy Monday (1988)","The Field (1990)","Black Beauty (1994)","Ronin (1998)","The Lord of the Rings: The Fellowship of the Ring (2001)","The Lord of the Rings: The Return of the King (2003)","Troy (2004)","Percy Jackson & the Olympians: The Lightning Thief (2010)","Silent Hill: Revelation 3D (2012)","The martian (2015)","The Young Messiah (2016)"],
+        "picture":"Sean_Bean.jpg",
+        "instagram":"@sean_bean_official"
+}
 }
 
 
@@ -121,7 +142,7 @@ characters ={
         "lastname": "Lewis",
         "profession": "Geologist",
         "role": "Astronaut",
-        "days_out_of_earth":100,
+        "days_out_of_earth":564,
         "photo":"Melissa_Lewis.PNG"
     },
     4: {
@@ -129,7 +150,7 @@ characters ={
         "lastname": "Johanssen",
         "profession": "Engineer",
         "role": "Commander",
-        "days_out_of_earth":100,
+        "days_out_of_earth":564,
         "photo":"Beth_Johanssen.PNG"
     },
     5: {
@@ -137,7 +158,7 @@ characters ={
         "lastname": "Beck",
         "profession": "Biologist",
         "role": "EVA Specialist",
-        "days_out_of_earth":100,
+        "days_out_of_earth":564,
         "photo":"Christopher_Beck.PNG"
     },
     6: {
@@ -145,7 +166,7 @@ characters ={
         "lastname": ";Martinez",
         "profession": "Engineer and Pilot",
         "role": "Pilot",
-        "days_out_of_earth":100,
+        "days_out_of_earth":564,
         "photo":"Rick_Martinez.PNG"
     },
     7: {
@@ -153,7 +174,7 @@ characters ={
         "lastname": "Vogel",
         "profession": "Biochemical",
         "role": "Navigator & Chemist",
-        "days_out_of_earth":100,
+        "days_out_of_earth":564,
         "photo":"Alex_Vogel.PNG"
     },
     8: {
@@ -171,5 +192,22 @@ characters ={
         "role": "NASA Media Relations",
         "days_out_of_earth":0,
         "photo":"Annie_Montrose.PNG"
+    },
+    10: {
+        "name": "Mindy",
+        "lastname": "Park",
+        "profession": "Communications engineer",
+        "role": "NASA SatCom engineer",
+        "days_out_of_earth":0,
+        "photo":"Mindy_Park.PNG"
+    },
+    11: {
+        "name": "Mitch",
+        "lastname": "Henderson",
+        "profession": "Engineer",
+        "role": "Hermes Flight Director",
+        "days_out_of_earth":0,
+        "photo":"Mitch_Henderson.PNG"
     }
+    
 }

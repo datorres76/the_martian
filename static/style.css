@@ -30,7 +30,9 @@
 
 }
 .body-index{
-    background-image: url("/static/images/space-background-website\ \(1\).jpeg");
+    background-image: url("/static/images/space-background-website.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .actor_img{
@@ -79,7 +81,7 @@
     }
     .card-container{
     width: 400px;
-    height: 480px;
+    height: 510px;
     background: #FFF;
     border-radius: 6px;
     position: relative;
@@ -120,7 +122,7 @@
     text-align: center;
     }
     .lower-container-char{
-    height: 340px;
+    height: 360px;
     background: rgb(180, 175, 175);
     padding: 20px;
     padding-top: 40px;
@@ -170,6 +172,7 @@
         color: #22248f;
     }
     .lower-container .btn{
+    margin-top: 40px;
     padding: 12px 20px;
     background: #7F00FF;
     border: none;
@@ -261,7 +264,7 @@ hr{
 }
 
 .upper-me{
-    background-image: url("/static/images/3311924db62ceef62a4a7ee87017280f\ \(1\).jpg");
+    background-image: url("/static/images/mars_me\ \(1\).jpg");
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 400px;
@@ -270,3 +273,32 @@ hr{
 .lower-me{
     margin-top: 60px;
 }
+
+.upl{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.img-upl{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.form-upl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    border: solid rgb(119, 116, 116);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cont-upl{
+    display: flex;
+    justify-content: center;
+}
+
